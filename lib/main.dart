@@ -27,7 +27,7 @@ class MyApp extends StatelessWidget {
           primarySwatch: Colors.blue,
         ),
         // home: const LoginScreen(),
-        initialRoute: RoutesName.splash,
+        initialRoute: RoutesName.homeMovie,
         onGenerateRoute: Routes.generateRoute,
         debugShowCheckedModeBanner: false,
       ),

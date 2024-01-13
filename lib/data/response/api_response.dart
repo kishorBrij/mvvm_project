@@ -1,18 +1,21 @@
 
 
+
+
 import 'package:mvvm_project/data/response/status.dart';
+import 'package:mvvm_project/model/movie_model.dart';
 
 class ApiResponse<T> {
 
-  Status? status;
+  Status status;
   T? data;
   String? message;
 
   ApiResponse(this.status, this.data, this.message);
 
   ApiResponse.loading() : status = Status.LOADING;
-  ApiResponse.completed() : status = Status.COMPLETED;
-  ApiResponse.error() : status = Status.ERROR;
+  ApiResponse.completed(MovieListModel value) : status = Status.COMPLETED;
+  ApiResponse.error(String string) : status = Status.ERROR;
 
   @override
   String toString(){
