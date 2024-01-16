@@ -105,6 +105,8 @@ class _LoginViewState extends State<LoginView> {
                     'email' : _emailController.text.toString(),
                     'password' : _passwordController.text.toString()
                   };
+                  //   'email' : 'eve.holt@reqres.in',
+                  //   'password' : 'cityslicka',
                   authViewMode.loginApi(data, context);
                   if (kDebugMode) {
                     print('api hit');

@@ -32,7 +32,7 @@ class _HomeScreenMovieState extends State<HomeScreenMovie> {
   Widget build(BuildContext context) {
     final userPrefernece = Provider.of<UserViewModel>(context);
 
-    log("${homeViewViewModel.moviesList}");
+    log("kkkkkk${homeViewViewModel.moviesList}");
     return Scaffold(
       appBar: AppBar(
         automaticallyImplyLeading: false,

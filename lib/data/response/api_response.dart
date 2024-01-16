@@ -14,7 +14,7 @@ class ApiResponse<T> {
   ApiResponse(this.status, this.data, this.message);
 
   ApiResponse.loading() : status = Status.LOADING;
-  ApiResponse.completed(MovieListModel value) : status = Status.COMPLETED;
+  ApiResponse.completed(this.data) : status = Status.COMPLETED;
   ApiResponse.error(String string) : status = Status.ERROR;
 
   @override
